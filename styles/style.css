@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("/font/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Raleway-bold";
+    src: url("/font/static/Raleway-Bold.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", serif;
+    --main-color: #0065FC;
+    --main-color-light: #DEEBFF;
+    --main-color-bg: #F2F2F2;
+    --main-color-black: black;
+    --main-color-white: white;
+    --size-font-h1: 2em;
+    --size-font-h2: 1.5em;
+    --size-font-h3: 1.2em;
+    --size-font-h4: 1em;
+    --size-font-p: 1em;
+    --size-font-small: 0.7em;
+    --size-font-medium: 1em;
+    --size-font-large: 1.2em;
+    --font-family-Raleway-bold: "Raleway-bold";
+    --font-family-Raleway: "Raleway";
+}
+/* container */
+header, .container {
+    margin: 40px;
+}
+/* text */
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+p, a {
+    font-family: var(--font-family-Raleway);
+    font-weight: normal;
+}
+p {
+    font-size: var(--size-font-p);
+    margin: 10px 0;
+}
+/* title */
+h1 {
+    font-size: var(--size-font-h1);
+    font-family: var(--font-family-Raleway);
+    font-weight: bold;
+}
+h2 {
+    font-size: var(--size-font-h2);
+    font-family: var(--font-family-Raleway-bold);
+}
+/* navigation */
+.nav {
+    display: flex;
+    padding: 0 15px;
+    height: 100px;
+}
+.nav-icon {
+    padding: 0 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-bar  {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-bar li {
+    padding: 0 20px;
+}
+.nav-bar li,
+.nav-icon li,
+.nav a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-color-black);
+}
+.nav li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav .nav-bar li {
+    border-top: 2px solid transparent;
+}
+.nav .nav-bar li:hover, 
+.nav .nav-bar li:active {
+    border-top: 2px solid var(--main-color);
+}
+.nav-bar li:last-child a {
+    font-family: var(--font-family-Raleway-bold);
+    color: var(--main-color);
+}
+.nav a:hover,
+.nav a:active {
+        color: var(--main-color);
+        font-weight: bold;
+}
+/* header */
+.header-search {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: start;
+}
+.header-search input {
+    height: 50px;
+    display: flex;
+    border: 1px solid var(--main-color-bg);
+    width: 250px;
+    outline: none;
+    font-size: 18px;
+    padding: 0 20px;
+}
+.header-search input:active {
+    border: none;
+}
+.header-search ::placeholder {
+    font-family: var(--font-family-Raleway-bold);
+    color: var(--main-color-black);
+}
+.header-search i {
+    background-color: var(--main-color-bg);
+    padding: 0 20px;
+    border-radius: 15px 0 0px 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.header-search button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-family: var(--font-family-Raleway-bold);
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 0px 10px 10px 0px;
+    color: var(--main-color-white);
+    font-size: var(--size-font-large);
+}
+.header-search button:hover {
+    color: var(--main-color);
+    cursor: pointer;
+    background-color: var(--main-color-light);
+}
+/* filter */
+.header .filter li {
+    margin: 5px 0;
+    margin-right: 25px;
+    padding-right: 30px;
+    display: inline-flex;
+    border: 2px solid var(--main-color-bg);
+    /* border-bottom: 2px solid var(--main-color-bg);
+    border-right: 2px solid var(--main-color-bg); */
+    border-radius: 50px 50px 50px 50px;
+}
+.header .filter li:first-child {
+    border: none;
+}
+.header .filter li a, li {
+    font-family: var(--font-family-Raleway-bold);
+    color: var(--main-color-black);
+    font-size: var(--size-font-large);
+}
+
+.header .filter li i {
+    z-index: 100;
+    color: var(--main-color);
+    background-color: var(--main-color-light);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+}
+.header .filter li:hover {
+    background-color: var(--main-color-light);
+
+}
