@@ -56,6 +56,10 @@
     font-family: var(--font-family-Raleway-bold);
     font-size: var(--size-font-large);
 }
+.container--block--activity {
+    padding: var(--margin--2rem) 0 ;
+}
+
 .container--block--element {
     display: grid;
     row-gap: 2rem;
