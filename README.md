@@ -11,7 +11,7 @@
   </a>
 
   <p align="center">
-    Par Nicolas BAAR
+    Par Kalene APIOU
     <br />
     <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021/issues">Un problème avec le code ?</a>
     ·
