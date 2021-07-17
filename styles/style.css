@@ -160,7 +160,7 @@
     grid-template-columns: repeat(4, 1fr);
 }
 .container--block--element--activity .container--block--element--content img {
-    height: 160px;
+    height: 175px;
     width: 100%;
 }
 .container--block--element--activity .container--block--element--content:nth-child(3n + 1) {
