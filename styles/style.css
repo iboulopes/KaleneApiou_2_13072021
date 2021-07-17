@@ -367,11 +367,11 @@ h2 {
 }
 .footer .content--footer {
     flex: 1;
-    /* flex-basis: 33%; */
 }
-.footer .container--footer div {
+.footer .content--footer div {
     margin: var(--margin--1rem) 0rem;
 }
+
 /* break point font size */
 @media screen and (max-width: 760px) {
     * {
