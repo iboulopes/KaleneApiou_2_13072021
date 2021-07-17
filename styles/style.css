@@ -287,6 +287,7 @@ h2 {
     align-items: center;
     padding: 0 15px;
     font-family: var(--font-family-Raleway-bold);
+    font-weight: bold;
     border: none;
     background-color: var(--main-color);
     border-radius: 0px 10px 10px 0px;
@@ -309,6 +310,7 @@ h2 {
     display: inline-flex;
     border: 2px solid var(--main-color-bg);
     border-radius: 50px 50px 50px 50px;
+    border-left: none;
 }
 .header .filter span:first-child {
     padding-right: 0px;
