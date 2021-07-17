@@ -155,7 +155,6 @@
 .container--activity {
     margin: var(ma) 0;
 }
-
 .container--block--element--activity {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
