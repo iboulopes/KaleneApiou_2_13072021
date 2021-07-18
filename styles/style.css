@@ -9,28 +9,30 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Raleway", serif;
     --main-color: #0065fc;
     --main-color-light: #deebff;
     --main-color-bg: #f2f2f2;
     --main-color-black: black;
     --main-color-white: white;
-    --size-font-h1: 2em;
-    --size-font-h2: 1.5em;
-    --size-font-h3: 1.2em;
-    --size-font-h4: 1em;
-    --size-font-small: 0.7em;
-    --size-font-medium: 1em;
-    --size-font-large: 1.2em;
+    --size-font-h1: 2rem;
+    --size-font-h2: 1.5rem;
+    --size-font-h3: 1.2rem;
+    --size-font-h4: 1rem;
+    --size-font-small: 0.7rem;
+    --size-font-medium: 1rem;
+    --size-font-large: 1.2rem;
     --font-family-Raleway-bold: "Raleway-bold";
     --font-family-Raleway: "Raleway";
     --margin--container: 1.2%;
-    --margin--2rem: 2rem;
-    --margin--1rem: 1rem;
-    --padding--1rem: 1rem;
+    --margin--2rem: 2em;
+    --margin--1rem: 1em;
+    --padding--1rem: 1em;
 
     font-family: var(--font-family-Raleway);
 }
+
 .main-bg {
     background-color: var(--main-color-bg);
 }
@@ -42,7 +44,7 @@
     margin: 2rem var(--margin--container);
 }
 .container {
-    margin: 2rem var(--margin--container);
+    margin: 2rem calc(var(--margin--container) *2) ;
     display: flex;
 }
 .container {
@@ -113,6 +115,7 @@
 .container--block-right .container--block--element--content a .image {
     width: 40%;
     object-fit: cover;
+    height: 200px;
 }
 .container--block-right .container--block--element--content a .description {
     width: 60%;
@@ -124,7 +127,7 @@
 .container--block-right .container--block--element img {
     border-radius: 15px 0 0 15px;
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
 }
 .container--block-right h2 {
@@ -141,6 +144,14 @@
     align-items: flex-end;
     height: 100%;
 }
+.container--block--element--content div p:nth-child(2):after {
+    content: "€";
+    font-weight: bold;
+}
+/* .container--block--element--content div p:nth-child(2)::first-letter {
+    color: red;
+} */
+
 /* .container--block-right .starsRate  {
     display: flex;
     justify-content: flex-end;
@@ -208,7 +219,7 @@ h2 {
 
 .nav {
     display: flex;
-    padding: 0 4rem;
+    padding: 0 calc(var(--margin--container) * 2 );
     height: 110px;
 }
 .nav-bar {
@@ -374,7 +385,7 @@ h2 {
 }
 
 /* break point font size */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     * {
         --size-font-h1: 2em;
         --size-font-h2: 1.5em;
@@ -388,7 +399,7 @@ h2 {
 }
 
 /* responsive */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .container--block--element {
         row-gap: 1rem;
         column-gap: 1rem;
@@ -421,14 +432,14 @@ h2 {
     .container--block--element--activity .container--block--element--content img {
         height: 250px;
     }
-    .container--block-right .container--block--element img {
+    .container--block-right .container--block--element .image {
         height: 250px;
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 992px) {
     .nav {
-        padding: 0 2rem;
+        padding: 0 rem;
     }
     .container--block--element--activity {
         display: grid;
@@ -445,9 +456,6 @@ h2 {
     }
 
     .container--block--element {
-        grid-template-columns: repeat(auto-fit, 100%);
-    }
-    .container--block--element {
         display: grid;
         justify-content: center;
         width: 100%;
@@ -459,7 +467,7 @@ h2 {
         width: 100%;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .container--block--element--content img {
         height: 200px;
     }
@@ -469,13 +477,14 @@ h2 {
     .container--block--element--activity .container--block--element--content img {
         height: 200px;
     }
-    .container--block-right .container--block--element img {
+    .container--block-right .container--block--element--content .image {
         height: 200px;
-    }
-    .container--block-right .container--block--element--content img {
         width: 100%
     }
-  
+    .container--block-right .container--block--element--content  .description {
+        width: auto;
+        padding: calc(var(--padding--1rem) * 0.5);
+    }
     .container--block--element {
         row-gap: 2rem;
         column-gap: 2rem;
@@ -502,7 +511,7 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 5%;
+        padding: 0 var(--padding--1rem);
     }
     .nav-mobile .nav-bar {
         display: flex;
