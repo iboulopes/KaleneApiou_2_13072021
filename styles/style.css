@@ -85,10 +85,10 @@
 }
 .container--block--element--content p:nth-child(2) {
     font-family: var(--font-family-Raleway);
-    padding: 0 10px;
+    padding: 0 1rem;
 }
 .container--block--element--content p:nth-child(1) {
-    padding: 5px 10px;
+    padding: 1rem;
     font-family: var(--font-family-Raleway-bold);
 }
 .starsRate {
@@ -235,10 +235,10 @@ h2 {
     padding: 0 20px;
 }
 .nav-bar li:last-child {
-    padding-left: calc(var(--margin--container) * 2);
+    padding-right: calc(var(--margin--container) * 2);
 }
 .nav-bar li:first-child {
-    padding-right: calc(var(--margin--container) * 2);
+    padding-left: calc(var(--margin--container) * 2);
 }
 .nav-bar li,
 .nav-icon li,
@@ -384,12 +384,12 @@ h2 {
     background-color: var(--main-color-bg);
 }
 .container--footer {
-    margin: 0 var(--margin--container);
+    margin: 0 calc(var(--margin--container) * 2);
+    padding: 1rem;
 }
 .footer .container--footer {
     display: flex;
     flex-direction: row;
-    padding: var(--margin--2rem) var(--margin--2rem);
 }
 .footer .content--footer {
     flex: 1;
