@@ -222,7 +222,6 @@ h2 {
 
 .nav {
     display: flex;
-    padding: 0 calc(var(--margin--container) * 2);
     height: 110px;
 }
 .nav-bar {
@@ -236,10 +235,10 @@ h2 {
     padding: 0 20px;
 }
 .nav-bar li:last-child {
-    padding: 0;
+    padding-left: calc(var(--margin--container) * 2);
 }
 .nav-bar li:first-child {
-    padding: 0;
+    padding-right: calc(var(--margin--container) * 2);
 }
 .nav-bar li,
 .nav-icon li,
