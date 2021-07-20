@@ -235,6 +235,12 @@ h2 {
 .nav-bar li {
     padding: 0 20px;
 }
+.nav-bar li:last-child {
+    padding: 0;
+}
+.nav-bar li:first-child {
+    padding: 0;
+}
 .nav-bar li,
 .nav-icon li,
 .nav a {
