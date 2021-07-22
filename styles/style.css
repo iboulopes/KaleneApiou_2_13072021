@@ -255,14 +255,14 @@ h2 {
 .nav .nav-bar li {
     border-top: 2px solid transparent;
 }
-.nav .nav-bar li:hover,
-.nav .nav-bar li:active {
+.nav .nav-bar li:nth-child(n + 2):nth-child(-n + 3):hover,
+.nav .nav-bar li:nth-child(n + 2):nth-child(-n + 3):active {
     border-top: 2px solid var(--main-color);
 }
-.nav .nav-bar li:nth-child(1):hover,
+/* .nav .nav-bar li:nth-child(1):hover,
 .nav .nav-bar li:nth-child(1):active {
     border-top: 2px solid transparent;
-}
+} */
 .nav-bar .nav--nav-bar--register {
     font-family: var(--font-family-Raleway-bold);
     color: var(--main-color);
@@ -414,7 +414,6 @@ h2 {
 
 /* responsive */
 @media screen and (max-width: 1200px) {
-   
     .container--block--element--activity > * {
         grid-area: auto;
     }
@@ -450,7 +449,6 @@ h2 {
 }
 
 @media screen and (max-width: 992px) {
-    
     .container--block--element--activity {
         display: grid;
         grid-template-columns: repeat(auto-fit, 1fr);
@@ -519,14 +517,20 @@ h2 {
         justify-content: flex-start;
         margin-bottom: 5rem;
     }
-    .nav .nav-bar li {
-        border-bottom: 2px solid transparent;
-    }
-    .nav .nav-bar li:hover,
-    .nav .nav-bar li:active {
-        border-bottom: 2px solid transparent;
+
+    .nav .nav-bar li:nth-child(n + 2):nth-child(-n + 3):hover,
+    .nav .nav-bar li:nth-child(n + 2):nth-child(-n + 3):active {
         border-top: 2px solid transparent;
     }
+    .nav .nav-bar li:nth-child(n + 2):nth-child(-n + 3),
+    .nav .nav-bar li:nth-child(n + 2):nth-child(-n + 3) {
+        border-bottom: 2px solid var(--main-color-bg);
+    }
+    .nav .nav-bar li:nth-child(n + 2):nth-child(-n + 3):hover,
+    .nav .nav-bar li:nth-child(n + 2):nth-child(-n + 3):active {
+        border-bottom: 2px solid var(--main-color);
+    }
+
     .nav-bar li:nth-child(1) {
         order: 1;
         flex-basis: 50%;
@@ -535,13 +539,11 @@ h2 {
         order: 3;
         flex: 1;
         justify-content: center;
-        border-bottom: 2px solid var(--main-color-bg);
     }
     .nav-bar li:nth-child(3) {
         flex: 1;
         order: 4;
         justify-content: center;
-        border-bottom: 2px solid var(--main-color-bg);
     }
     .nav-bar li:nth-child(4) {
         justify-content: flex-end;
@@ -549,14 +551,6 @@ h2 {
         order: 2;
     }
 
-    .nav-bar li:nth-child(2):hover,
-    .nav-bar li:nth-child(2):active {
-        border-bottom: 2px solid var(--main-color);
-    }
-    .nav-bar li:nth-child(3):hover,
-    .nav-bar li:nth-child(3):active {
-        border-bottom: 2px solid var(--main-color);
-    }
     .nav-bar li:nth-child(3) {
         flex: 1;
         order: 4;
