@@ -6,16 +6,16 @@
 <br />
 
 <p align="center">
-  <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021">
+  <a href="https://github.com/kaleneDeveloper/KaleneApiou_2_13072021">
     <img src="images/logo/Reservia.svg" alt="Logo">
   </a>
 
   <p align="center">
     Par Kalene APIOU
     <br />
-    <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021/issues">Un problème avec le code ?</a>
+    <a href="https://github.com/kaleneDeveloper/KaleneApiou_2_13072021/issues">Un problème avec le code ?</a>
     ·
-    <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021/issues">Une option à ajouter ?</a>
+    <a href="https://github.com/kaleneDeveloper/KaleneApiou_2_13072021/issues">Une option à ajouter ?</a>
   </p>
 </p>
 
@@ -39,11 +39,11 @@ Kalene APIOU - [@kalene](https://kaleneapiou.fr/) - kaleneapiou@gmail.com
 
 Lien du projet : [https://kalenedeveloper.github.io/KaleneApiou_2_13072021/](https://kalenedeveloper.github.io/KaleneApiou_2_13072021/)
 
-[contributors-shield]: https://img.shields.io/github/contributors/NicolasMB3/NicolasBAAR_2_18072021.svg?style=flat-square
-[contributors-url]: https://github.com/NicolasMB3/NicolasBAAR_2_18072021/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/NicolasMB3/NicolasBAAR_2_18072021.svg?style=flat-square
-[forks-url]: https://github.com/NicolasMB3/NicolasBAAR_2_18072021/pulse
-[stars-shield]: https://img.shields.io/github/stars/NicolasMB3/NicolasBAAR_2_18072021.svg?style=flat-square
-[stars-url]: https://github.com/NicolasMB3/NicolasBAAR_2_18072021/stargazers
-[issues-shield]: https://img.shields.io/github/issues/NicolasMB3/NicolasBAAR_2_18072021.svg?style=flat-square
-[issues-url]: https://github.com/NicolasMB3/NicolasBAAR_2_18072021/issues
+[contributors-shield]: https://img.shields.io/github/contributors/kaleneDeveloper/KaleneApiou_2_13072021svg?style=flat-square
+[contributors-url]: https://github.com/kaleneDeveloper/KaleneApiou_2_13072021/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/kaleneDeveloper/KaleneApiou_2_13072021svg?style=flat-square
+[forks-url]: https://github.com/kaleneDeveloper/KaleneApiou_2_13072021/pulse
+[stars-shield]: https://img.shields.io/github/stars/kaleneDeveloper/KaleneApiou_2_13072021svg?style=flat-square
+[stars-url]: https://github.com/kaleneDeveloper/KaleneApiou_2_13072021/stargazers
+[issues-shield]: https://img.shields.io/github/issues/kaleneDeveloper/KaleneApiou_2_13072021svg?style=flat-square
+[issues-url]: https://github.com/kaleneDeveloper/KaleneApiou_2_13072021/issues
