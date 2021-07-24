@@ -229,7 +229,7 @@ h2 {
     display: flex;
 }
 .nav-bar li:nth-child(1) {
-    flex: 1;
+    width: 100%;
 }
 .nav-bar li {
     padding: 0 20px;
