@@ -25,7 +25,7 @@
     --size-font-large: 1.2rem;
     --font-family-Raleway-bold: "Raleway-bold";
     --font-family-Raleway: "Raleway";
-    --margin--container: 1.5%;
+    --margin--container: 3%;
     --margin--2rem: 2rem;
     --margin--1rem: 1rem;
     --padding--1rem: 1rem;
@@ -44,7 +44,7 @@
     margin: 2rem var(--margin--container);
 }
 .container {
-    margin: 2rem calc(var(--margin--container) * 2);
+    margin: 2rem var(--margin--container);
     display: flex;
 }
 .container {
@@ -235,10 +235,10 @@ h2 {
     padding: 0 20px;
 }
 .nav-bar li:last-child {
-    padding-right: calc(var(--margin--container) * 2);
+    padding-right: var(--margin--container);
 }
 .nav-bar li:first-child {
-    padding-left: calc(var(--margin--container) * 2);
+    padding-left: var(--margin--container);
 }
 .nav-bar li,
 .nav-icon li,
@@ -384,7 +384,7 @@ h2 {
     background-color: var(--main-color-bg);
 }
 .container--footer {
-    margin: 0 calc(var(--margin--container) * 2);
+    margin: 0 var(--margin--container) ;
     padding: 1rem;
 }
 .footer .container--footer {
@@ -432,7 +432,7 @@ h2 {
         padding: 1rem 1rem;
     }
     .container--block--element--activity {
-        grid-template-columns: repeat(auto, 20rem);
+        grid-template-columns: repeat(auto-fit, 20rem);
     }
     .container--block--element--content img {
         height: 250px;
@@ -483,7 +483,7 @@ h2 {
         border-radius: 0px;
     }
     .container--block:nth-child(1) {
-        background-color: none;
+        background-color: white;
     }
     .container--block:nth-child(1) {
         background-color: white;
@@ -504,13 +504,17 @@ h2 {
     }
     .container--block-right .container--block--element--content .description {
         width: auto;
-        padding: calc(var(--padding--1rem) * 0.5);
+        padding: 0.5rem;
     }
 
     .container--block--element {
         row-gap: 2rem;
         column-gap: 2rem;
         grid-template-columns: repeat(auto-fit, 100%);
+    }
+    .container--footer {
+        margin: 0;
+        padding: 1rem;
     }
     .header-search input {
         width: 100%;
