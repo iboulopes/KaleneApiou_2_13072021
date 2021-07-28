@@ -476,6 +476,19 @@ h2 {
     }
 }
 @media screen and (max-width: 768px) {
+    .container {
+        margin: 2rem 0;
+    }
+    .container--block {
+        border-radius: 0px;
+    }
+    .container--block:nth-child(1) {
+        background-color: none;
+    }
+    .container--block:nth-child(1) {
+        background-color: white;
+    }
+   
     .container--block--element--content img {
         height: 200px;
     }
