@@ -41,7 +41,7 @@
     margin: 0 var(--margin--container);
 }
 .header > * {
-    margin: 2rem var(--margin--container);
+    margin: 2rem 0;
 }
 .container {
     margin: 2rem var(--margin--container);
@@ -432,7 +432,7 @@ h2 {
         padding: 1rem 1rem;
     }
     .container--block--element--activity {
-        grid-template-columns: repeat(auto-fit, 20rem);
+        grid-template-columns: repeat(2, 1fr);
     }
     .container--block--element--content img {
         height: 250px;
